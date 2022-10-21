@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Bootstrap Table Example</title>
+</head>
+
+<body>
+
+    <h1>Bootstrap Table Example</h1>
+    <br><br>
+
+
+    <h4>1.Basic Table</h4>
+    <!--We can customize table using table property-->
+    <div class="conatainer">
+        <table class="table table-dark table-bordered">
+            <thead>
+                <!--We can also Customize Table single row/column/box using table property-->
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Fresher</td>
+                </tr>
+
+                <tr class="table-primary">
+                    <td>Yash</td>
+                    <td>22</td>
+                    <td>1 year</td>
+                </tr>
+
+                <tr class="table-primary">
+                    <td>Mihir</td>
+                    <td>25</td>
+                    <td>4 year</td>
+                </tr>
+
+                <tr class="table-primary">
+                    <td>Rajesh</td>
+                    <td>24</td>
+                    <td>2 year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+
+
+    <h4>2.Stripped Table</h4>
+    <!--Also Can Strip Table Using Table Stripped Property-->
+    <div class="conatainer">
+        <table class="table table-striped">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table">
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Fresher</td>
+                </tr>
+
+                <tr class="table">
+                    <td>Yash</td>
+                    <td>22</td>
+                    <td>1 year</td>
+                </tr>
+
+                <tr class="table">
+                    <td>Rajesh</td>
+                    <td>24</td>
+                    <td>2 year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+
+
+    <h4>3.Hover Table</h4>
+    <!--Also Can Hover Table Using Table Hover Property-->
+    <!--Also Can Hover Table Row Individual Using Table-active Property-->
+    <div class="conatainer">
+        <table class="table table-hover">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table">
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Fresher</td>
+                </tr>
+
+                <tr class="table">
+                    <td>Yash</td>
+                    <td>22</td>
+                    <td>1 year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+
+
+    <h4>4.Bordered Table</h4>
+    <!--we can give border to a table using bordered and make it disabled border using borderless-->
+    <div class="conatainer">
+        <table class="table table-bordered">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table">
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Fresher</td>
+                </tr>
+
+                <tr class="table">
+                    <td>Yash</td>
+                    <td>22</td>
+                    <td>1 year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+
+
+    <h4>4.Table Small</h4>
+    <!--we can use table sm property to make table smaller than regular/bigger-->
+    <div class="conatainer">
+        <table class="table table-sm">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table">
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Fresher</td>
+                </tr>
+
+                <tr class="table">
+                    <td>Yash</td>
+                    <td>22</td>
+                    <td>1 year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+
+    <!--To add responsiveness in table we can use property table-responsive-->
+    <!--To Change Responsive On Specific Screen Size Use table-responsive-sm-->
+
+
+
+    <h4>6.Table Group Divider</h4>
+    <!--Table-group-divider used for the divide one section from the other parts in table-->
+    <!--It look like an dark solid black border-->
+    <!--We can only add this bootstrap property to head,body or footer-->
+    <div class="conatainer">
+        <table class="table table-sm table-bordered border-dark">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr class="table border-dark">
+                    <td>Raj</td>
+                    <td>19</td>
+                    <td>Fresher</td>
+                </tr>
+
+                <tr class="table border-dark">
+                    <td>Yash</td>
+                    <td>22</td>
+                    <td>1 year</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+
+</body>
+
+</html>
