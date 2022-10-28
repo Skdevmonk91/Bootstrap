@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Bootstrap Form Validation</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Bootstrap Form Validation</h1>
+    <br><br>
+
+    <!--Using class was-validated or javascript to show the validation of form or specific input-->
+    <!--Also can be add required after placeholder will do the same but with less priorities-->
+    <!--also can apply validation message using class invalid-feedback and valid-feedback with
+    a specific message we want to appear(must come after all form fields)-->
+    <div class="container-fluid">
+        <form class="was-validated">
+            <div class="form-floating">
+                <input type="name" id="name" class="form-control" placeholder="Add  Name" required>
+                <label for="name">Name</label>
+                <div class="invalid-feedback">Invalid Format</div>
+                <div class="valid-feedback">Correct Format</div>
+            </div>
+            <button>Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
