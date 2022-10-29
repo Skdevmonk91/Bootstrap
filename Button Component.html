@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Button Component</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Button Component</h1>
+    <br><br>
+
+
+    <div class="container">
+
+        <!--Button with basic color using Property btn-primary/etc-->
+        <button class="btn btn-primary">Button 1</button>
+
+        <!--Button with link in it using Property class and href link included-->
+        <a class="btn btn-secondary" href="https://www.google.co.in/">Button 2</a>
+
+        <!--Button look like a link using Property btn-link-->
+        <button class="btn btn-link">Button 3</button>
+
+        <!--Button size lg/sm  using Property btn-lg/sm-->
+        <button class="btn btn-success btn-lg">Button 4</button>
+
+        <!--Button outline system using Property btn-outline-dark/etc-->
+        <button class="btn btn-outline-dark">Button 5</button>
+
+        <!--Button disabled state can defined outside class-->
+        <!--for Link Button Disable it have class disable also remove href link so it don't work-->
+        <button class="btn btn-danger" disabled>Button 6</button>
+
+        <!--Button can be make toggle by class data-bs-toggle and value button-->
+        <button class="btn btn-outline-warning" data-bs-toggle="button">Button 7</button>
+    </div>
+    <br><br>
+
+    <!--Button can be in a group using class btn-group outside class of button-->
+    <!--Also can use property of button size and horizontal/vertical etc-->
+    <div class="container">
+        <div class="btn-group-lg btn-group-vertical">
+            <button class="btn btn-outline-dark">Button 1</button>
+            <button class="btn btn-outline-dark">Button 2</button>
+            <button class="btn btn-outline-dark">Button 3</button>
+            <button class="btn btn-outline-dark">Button 4</button>
+            <button class="btn btn-outline-dark">Button 5</button>
+        </div>
+    </div>
