@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Alert Component</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Alert Component</h1>
+    <br><br>
+
+
+    <div class="container">
+        <!--Basic alert using alert and alert-danger/etc class-->
+        <div class="alert alert-danger">Alert</div>
+    </div>
+
+
+
+    <div class="container">
+        <!--You can assign role using role function-->
+        <div class="alert alert-primary" role="alert">Alert</div>
+    </div>
+
+
+
+    <div class="container">
+        <!--We can also make alert dismissible using alert-dismissible-->
+        <div class="alert alert-success alert-dismissible">
+            Alert
+            <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <!--We can also put extra text,link,etc in a single alert box-->
+        <div class="alert alert-secondary alert-dismissible">
+            <h2>Advice</h2>
+            <a href="https://www.google.co.in/" class="alert-link">Check This Topic On Google</a>
+            <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <!--We can also make it dismissible in fade show using fade show-->
+        <div class="alert alert-dark alert-dismissible fade show">
+            <h2>Advice</h2>
+            <a href="https://www.google.co.in/" class="alert-link">Check This Topic On Google</a>
+            <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
