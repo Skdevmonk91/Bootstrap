@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Collapse Component</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Collapse Component</h1>
+    <br><br>
+
+    <div class="container-fluid">
+
+
+        <!--Using data-bs-toggle="collapse" to make it collapse -->
+        <!--also target specific class or id to do the work-->
+        <!--aria-expended/controls=true/row to expend and control for selected target-->
+        <button class="btn btn-outline-dark" data-bs-toggle="collapse" data-bs-target=".row" aria-expanded="false"
+            aria-controls="row">Collapse</button>
+    </div>
+
+
+    <!--You can add multiple rows and collapse at same time-->
+    <!--If we don't want to use aria expanded than make it false and add class collapse
+    to specific rows-->
+    <div class="row collapse" id="row">
+        <div class="col">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <div class="row collapse">
+        <div class="col">
+            <div class="box"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
