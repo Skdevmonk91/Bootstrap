@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Model Component</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Model Component</h1>
+    <br><br>
+
+    <div class="container">
+        <!--Create the button with specific id to show the modal-->
+        <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#id1">Example</button>
+
+
+
+        <!--To make modal fade use fade class with specific id or class to choose the modal-->
+        <!--<div class="model fade modal-lg/xl/xxl/fullscreen"> To add Size 
+        for a model to show use class model-lg/xl/fullscreen etc for fullscreen add
+        it in modal dialog box-->
+        <!--Also we can add breakpoints in modal to show specific size on specific screen size-->
+        <div class="modal fade" id="id1">
+
+
+
+            <!-- <div modal-dialog modal-dialog-scrollable> to make dialog box
+                scrollable use modal-dialog-scrollable class -->
+            <!-- <div modal-dialog modal-dialog-centered> to make dialog box
+                text center use modal-dialog-centered class -->
+            <div class="modal-dialog">
+
+
+
+                <!--To add content in modal use and add modal-content class-->
+                <div class="modal-content">
+
+
+
+                    <!--To add header in modal use and add modal-header-class-->
+                    <!--Also we can add close button in header section 
+                    using data-bs-dismiss/target both class with specific id-->
+                    <div class="modal-header">
+                        <h4>Example Header</h4>
+                        <button class="btn-close" data-bs-dismiss="modal" data-bs-target="#id1"></button>
+                    </div>
+
+
+
+                    <!--To add text in modal use modal-body class-->
+                    <div class="modal-body">
+                        This was a pretty informative example and usage of
+                        words to add a new modal other than card and way
+                        more better in terms of use but what it will ask
+                        we will add as important part in the modal body.
+                    </div>
+
+
+
+                    <!--To add close button with working use data-bs-dismiss-->
+                    <div class="modal-footer">
+                        <button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
