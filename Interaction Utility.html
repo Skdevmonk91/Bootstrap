@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Interaction Utility</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Interaction Utility</h1>
+    <br><br>
+
+    <h3>1.Text Selection Interaction</h3>
+    <div class="container border">
+        <!--To Select all text at same time use user-select-all class-->
+        <p class="user-select-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe sequi
+            consectetur nesciunt tempora amet. Minima, alias adipisci. Odio, ipsam? Exercitationem consectetur dolore
+            molestiae minus.<b>(Entirely selected when clicked by the user)</b></p>
+
+        <!--To Make it Default text select behavior use user-select-auto class-->
+        <p class="user-select-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem cupiditate
+            perferendis facere aspernatur veniam voluptatem ducimus quaerat, est obcaecati debitis recusandae quos
+            placeat et aperiam provident laudantium<b>(Default select behavior)</b></p>
+
+        <!--To Make it non-selectable text use user-select-none class-->
+        <p class="user-select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque dolorum illo
+            suscipit illum in obcaecati mollitia doloribus, dolore pariatur vero unde voluptates, repellendus enim
+            voluptas minima excepturi fugit ullam.<b>(Not selectable when clicked by the user)</b></p>
+    </div>
+
+
+    <h3>2.Pointer Event Interaction</h3>
+    <div class="container">
+        <!--To make it non-clickable link use class pe-none-->
+        <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">Non-clickable Link</a>(cannot be clicked)</p>
+
+        <!--To make it clickable link use class pe-auto-->
+        <p><a href="#" class="pe-auto">Clickable link</a> (Can be clicked default behavior)</p>
+
+        <p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">Child Non-Clickable Link</a> (cannot be
+            clicked because property is inherited from its parent)
+            <a href="#" class="pe-auto">Clickable Link(pe)</a>(It has a pe-auto class and can be clicked)
+        </p>
+    </div>
+</body>
+
+</html>
