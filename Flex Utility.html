@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Flex Utility</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Flex Utility</h1>
+    <br><br>
+
+    <div class="container">
+
+        <h4>1.Flex Utility Behavior</h4>
+
+        <!--Default flex utility using class d-flex-->
+        <div class="d-flex p-2 bg-secondary border">Flexbox Container</div>
+        <br>
+
+        <!--Inline flex utility using class d-inline-flex-->
+        <div class="d-inline-flex p-2 bg-secondary border">Inline Flexbox Container
+        </div>
+    </div><br><br>
+
+
+
+    <div class="container">
+        <h4>2.Flex Utility Direction</h4>
+
+        <!--Default flex direction utility using flex-row class-->
+        <div class="d-flex flex-row mb-3 border bg-secondary">
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item One</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Two</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Three</div>
+        </div>
+
+        <!--Reverse flex direction utility using flex-row-reverse class-->
+        <div class="d-flex flex-row-reverse border bg-secondary">
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item One</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Two</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Three</div>
+        </div><br>
+
+        <!--Default flex direction utility for col using flex-col class-->
+        <div class="d-flex flex-column mb-3">
+            <div class="p-2 bg-secondary border">Flex Item One</div>
+            <div class="p-2 bg-secondary border">Flex Item Two</div>
+            <div class="p-2 bg-secondary border">Flex Item Three</div>
+        </div>
+
+        <!--Reverse flex direction utility for col using flex-col-reverse class-->
+        <div class="d-flex flex-column-reverse">
+            <div class="p-2 bg-secondary border">Flex Item One</div>
+            <div class="p-2 bg-secondary border">Flex Item Two</div>
+            <div class="p-2 bg-secondary border">Flex Item Three</div>
+        </div>
+    </div><br><br>
+
+
+
+    <div class="container">
+        <h4>3.Flex Utility Justify Content</h4>
+
+        <!--Flex utility for justifying content using class
+        justify-content-center/between/around/etc-->
+        <div class="d-flex justify-content-center bg-secondary border">Flex Item One</div>
+        <div class="d-flex justify-content-between bg-secondary border">Flex Item Two</div>
+        <div class="d-flex justify-content-around bg-secondary border">Flex Item Three</div>
+    </div><br><br>
+
+
+
+    <div class="container">
+        <h4>4.Flex Utility Fill</h4>
+
+        <!--Flex utility for fill up space of item and content
+        using class flex-fill -->
+        <div class="d-flex">
+            <div class="p-2 flex-fill bg-secondary border">Flex Item With A Multiple Content Included</div>
+            <div class="p-2 flex-fill bg-secondary border">Flex item One</div>
+            <div class="p-2 flex-fill bg-secondary border">Flex item Two</div>
+        </div><br><br>
+    </div>
+
+
+
+    <div class="container">
+        <h4>5.Flex Utility Grow And Shrink</h4>
+
+        <!--Flex utility for grow item using class flex-grow-1/.../5-->
+        <div class="d-flex">
+            <div class="p-2 flex-grow-1 bg-secondary border">Flex Item One</div>
+            <div class="p-2 bg-secondary border">Flex Item Two</div>
+            <div class="p-2 bg-secondary border">Flex Item Three</div>
+        </div><br>
+
+        <!--Flex utility for shrink item using class flex-shrink-1/.../5-->
+        <div class="d-flex">
+            <div class="p-2 w-100 bg-secondary border">Flex Item One</div>
+            <div class="p-2 flex-shrink-1 bg-secondary border">Flex Item Two</div>
+        </div>
+    </div><br><br>
+
+
+
+    <div class="container">
+        <h4>6.Flex Utility align-items</h4>
+
+        <!--Flex utility for align items at start using class align-items-start-->
+        <div class="d-flex align-items-start flex-column mb-3 bg-secondary border" style="height: 200px;">
+            <div class="mb-auto p-2 bg-secondary bg-opacity-50 border">Flex Item One</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Two</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Three</div>
+        </div>
+
+        <!--Flex utility for align items at end using class align-items-end-->
+        <div class="d-flex align-items-end flex-column mb-3 bg-secondary border" style="height: 200px;">
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item One</div>
+            <div class="p-2 bg-secondary bg-opacity-50 border">Flex Item Two</div>
+            <div class="mt-auto p-2 bg-secondary bg-opacity-50 border">Flex Item Two</div>
+        </div>
+    </div><br><br>
+
+
+
+    <div class="container">
+        <h4>7.Flex Utility Order</h4>
+
+        <!--To se out order in flex utility for items
+        using class order-5/.../1-->
+        <div class="d-flex flex-nowrap bg-secondary border">
+            <div class="order-3 p-2 bg-secondary border">First flex Item</div>
+            <div class="order-2 p-2 bg-secondary border">Second flex Item</div>
+            <div class="order-1 p-2 bg-secondary border">Third flex Item</div>
+        </div>
+    </div><br><br>
+
+
+
+    <div class="container">
+        <h4>8.Media Object</h4>
+        <div class="d-flex border bg-secondary">
+            <div class="flex-shrink-0">
+                <svg class="bd-placeholder-img" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="50%" y="50%" fill="#999"
+                        dy=".3em">Image</text>
+                </svg>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                Few content to meet with description needs and requirements and used for to show in start of the box on
+                upperside.
+            </div>
+        </div><br>
+
+
+        <div class="d-flex align-items-center border bg-secondary">
+            <div class="flex-shrink-0">
+                <svg class="bd-placeholder-img" width="100" height="100" xmlns="http://www.w3.org/2000/svg" role="img"
+                    aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="50%" y="50%" fill="#999"
+                        dy=".3em">Image</text>
+                </svg>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                Provide content to meet with description needs and requirements used for to show content in center
+                of the box.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
