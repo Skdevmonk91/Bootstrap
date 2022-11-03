@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Sizing Utility</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Sizing Utility</h1>
+    <br><br>
+
+    <h4>1.Relative To Parent</h4>
+    <br>
+    <div class="container border">
+        <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+        <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+        <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+        <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+        <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+        <br>
+
+
+
+        <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+            <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+            <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+            <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+            <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+            <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto
+            </div>
+        </div><br>
+
+
+
+        <svg class="bd-placeholder-img mw-100" width="100%" height="100" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Placeholder: Max-width 100%" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6"
+                dy=".3em">Max-width 100%</text>
+        </svg>
+        <br><br>
+
+
+
+        <div style="height: 100px; background-color: rgba(255,0,0,.1);">
+            <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,.1);">Max-height 100%
+            </div>
+        </div>
+    </div><br>
+
+    <h4>2.Relative to the viewport</h4>
+    <div class="container border">
+        <div class="min-vw-100">Min-width 100vw</div>
+        <div class="min-vh-100">Min-height 100vh</div>
+        <div class="vw-100">Width 100vw</div>
+        <div class="vh-100">Height 100vh</div>
+    </div>
+</body>
+
+</html>
