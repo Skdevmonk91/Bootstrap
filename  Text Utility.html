@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Text Utility</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Text Utility</h1>
+    <br><br>
+
+    <div class="container border">
+
+        <!--We can text set at start using class text-start-->
+        <!--We can text set at center using class text-center-->
+        <!--We can text set at end using class text-end-->
+        <!--We can also set aligned text on specific viewport
+        size using class text-sm/md/lg/xl-start/center/end-->
+        <h4>1.Text Alignment In Text Utility</h4>
+        <div class="container box">
+            <p class="text-start">Start aligned text on all viewport sizes.</p>
+            <p class="text-center">Center aligned text on all viewport sizes.</p>
+            <p class="text-end">End aligned text on all viewport sizes.</p>
+
+            <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+            <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+            <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+            <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+        </div><br><br>
+
+
+
+        <!--We can wrap all content or text in box using
+        class text-wrap-->
+        <!--We can make it also for no-wrap or overflow
+        for text using class no-wrap-->
+        <h4>2.Text Wrapping And Overflow In Text Utility</h4>
+        <div class="container box">
+            <h5>->Using text wrap class</h5>
+            <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                A text should wrap.
+            </div><br>
+            <h5>->Using text no-wrap class</h5>
+            <div class="text-nowrap bg-light border" style="width: 8rem;">
+                A text should overflow the parent.
+            </div>
+        </div><br><br>
+
+
+
+        <!--We can make text break using class text-break-->
+        <h4>3.Word Break In Text Utility</h4>
+        <div class="container box">
+            <p class="text-break">
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccddddddddddddddddddddddddddddddddddddddddd
+            </p>
+        </div><br><br>
+
+
+
+        <!--We can make all text lowercase using class text-lowercase-->
+        <!--We can make all text uppercase using class text-uppercase-->
+        <!--We can make all text capitalize using class text-capitalize-->
+        <h4>4.Text Transform In Text Utility</h4>
+        <div class="container box">
+            <p class="text-lowercase">LOWERCASE TEXT TO SHOW THE EXAMPLE.</p>
+            <p class="text-uppercase">upparcase text to show the demonstration.</p>
+            <p class="text-capitalize">capitalized text to show right answer.</p>
+        </div><br><br>
+
+
+
+        <!--We can set text size in text utility using
+        class fs-1/.../6-->
+        <h4>5.Text Size In Text Utility</h4>
+        <div class="container box">
+            <p class="fs-1">Font Size One Text</p>
+            <p class="fs-2">Font Size Two Text</p>
+            <p class="fs-3">Font Size Three Text</p>
+            <p class="fs-4">Font Size Four Text</p>
+            <p class="fs-5">Font Size Five Text</p>
+            <p class="fs-6">Font Size Six Text</p>
+        </div><br><br>
+
+
+
+        <!--We can set text style in text utility using
+        class fw-bold/bolder/italic/normal/semibold/etc-->
+        <h4>6.Font Weight And Italics In Text Utility</h4>
+        <div class="container box">
+            <p class="fw-bold">Bold text.</p>
+            <p class="fw-bolder">Bolder weight text (relative to the parent element).
+            </p>
+            <p class="fw-semibold">Semibold weight text.</p>
+            <p class="fw-normal">Normal weight text.</p>
+            <p class="fw-light">Light weight text.</p>
+            <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+            <p class="fst-italic">Italic text.</p>
+            <p class="fst-normal">Text with normal font style</p>
+        </div><br><br>
+
+
+
+        <!--We can add text height or gap between lines in text utility using
+        class lh-1/sm/base/lg/etc-->
+        <h4>7.Line Height In Text Utility</h4>
+        <div class="container box">
+            <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+            <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by
+                our utilities. Classes are applied to the element itself or sometimes the parent element. These classes
+                can be customized as needed with our utility API.</p>
+        </div><br><br>
+
+
+
+        <!--We can make text monoscope using class font-monoscope-->
+        <h4>8.Monoscope In Text Utility</h4>
+        <div class="container box">
+            <p class="font-monospace text-success">This is in monospace</p>
+        </div><br><br>
+
+
+
+        <!--We can make text reset using class text-muted-->
+        <h4>9.Text Reset In Text Utility</h4>
+        <div class="container box">
+            <p class="text-muted">
+                Muted text with a <a href="#" class="text-reset">reset link</a>.
+            </p>
+        </div><br><br>
+
+
+
+        <!--Text Decoration Is Possible Using Class
+        text-decoration-underline/line-through/none/etc...-->
+        <h4>10.Text Decoration</h4>
+        <div class="container box">
+            <p class="text-decoration-underline">This text has a line underneath it.</p>
+            <p class="text-decoration-line-through">This text has a line going through it.</p>
+            <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+        </div>
+    </div>
+</body>
+
+</html>
