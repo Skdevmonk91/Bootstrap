@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Visually Hidden(Helper)</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Visually Hidden(Helper)</h1>
+    <br><br>
+
+    <div class="container border border-4 user-select-none text-capitalize">
+
+
+        <!--We can create a hidden title or text for screen 
+            readers using class visually-hidden-->
+        <h4>1.Visually Hidden Class</h4>
+        <h2 class="visually-hidden">Title for screen readers</h2>
+
+
+        <!--To make a hidden text for hidden and focusable
+        it is possible with class visually-hidden-focusable-->
+        <h4>2.Visually Hidden Focusable Class</h4>
+        <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+
+
+        <!--It is also possible for to show hidden and
+        focusable element with the same class like upper-->
+        <h4>3.Visually Hidden Class With Focusable Element</h4>
+        <div class="visually-hidden-focusable">A container with a <a href="#">focusable element</a>.</div>
+    </div>
+
+</body>
+
+</html>
