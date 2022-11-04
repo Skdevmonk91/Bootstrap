@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Vertical Rule(Helper)</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h1>Vertical Rule(Helper)</h1>
+    <br><br>
+
+    <div class="container border border-4 user-select-none text-capitalize bg-secondary">
+
+        <h4>1.Vertical Rule Basic</h4>
+        <div class="container">
+            <div class="vr"></div>
+        </div><br><br>
+
+        <h4>2.Vertical rules scale height in flex layouts</h4>
+        <div class="container">
+            <div class="d-flex" style="height: 200px;">
+                <div class="vr"></div>
+            </div>
+        </div><br><br>
+
+        <h4>3.Vertical rule with stacks</h4>
+        <div class="container">
+            <div class="hstack gap-3">
+                <div class="bg-light border">First item</div>
+                <div class="bg-light border ms-auto">Second item</div>
+                <div class="vr"></div>
+                <div class="bg-light border">Third item</div>
+            </div><br>
+        </div>
+    </div>
+</body>
+
+</html>
