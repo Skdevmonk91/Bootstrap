@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Progress Component</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h2>Progress Component</h2>
+    <br><br>
+
+    <h4>1.Basic Progress Bar</h4>
+    <!--We can create progress bar by creating main class
+    progress inside that adding progress-bar class and other values-->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar w-75" role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div><br>
+
+
+    <h4>2.Label with progress bar</h4>
+    <!--Adding a label in a progress bar is possible
+    with help of class aria-value/now/min/max-->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 25%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+    </div><br>
+
+
+    <h4>3.Height with progress bar</h4>
+    <!--Height of progress bar can be set by with help
+    of style and height define in main div-->
+    <div class="container">
+        <div class="progress" style="height: 1px;">
+            <div class="progress-bar" role="progressbar" aria-label="Example 1px high" style="width: 25%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+        <div class="progress" style="height: 20px;">
+            <div class="progress-bar" role="progressbar" aria-label="Example 20px high" style="width: 25%;"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div><br>
+
+
+    <h4>4.Backgrounds with progress bar</h4>
+    <!--We can change color of the progress or progress bar
+    inside defining a bg-dark/etc type of single progress bar-->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+        <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+        <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example" style="width: 75%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div><br>
+        <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 100%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div><br>
+
+
+    <h4>5.Multiple Bar In Progress Bar</h4>
+    <!--It is also possible to make multiple color bar
+    inside the single progress bar-->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-label="Segment one" style="width: 15%" aria-valuenow="15"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" aria-label="Segment two" style="width: 30%"
+                aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-info" role="progressbar" aria-label="Segment three" style="width: 20%"
+                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div><br>
+
+
+    <h4>6.Stripped Bar In Progress Bar</h4>
+    <!--To make a progress bar look like a stripped 
+    it can be done with help of class progress-bar-stripped-->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+    </div><br>
+
+
+    <h4>7.Animated Strip Bar In Progress Bar</h4>
+    <!--And to make a animated strip bar in progress component
+    using class progress-bar-animated to make it like animation-->
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                style="width: 75%"></div>
+        </div>
+    </div><br>
+</body>
+
+</html>
