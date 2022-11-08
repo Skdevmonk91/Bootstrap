@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" samesite="none"
+        rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Screen Size.css">
+    <title>Popovers Component</title>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+    <h2>Popovers Component</h2>
+    <br><br>
+
+    <div class="container border border-4 user-select-none text-capitalize">
+
+        <h4>1.Live Demo Popover In Popover Component</h4>
+        <!--To create a live demo for popover in popover
+        component using class popover(data-bs-toggle)-->
+        <div class="container">
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                popover</button>
+        </div><br>
+
+
+        <h4>2.Four Direction Popover In Popovers Component</h4>
+        <!--After Using Class top/right/bottom/left popover
+        in data-bs-toggle to set side of the popovers-->
+        <div class="container">
+            <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                data-bs-placement="top" data-bs-content="Top popover">
+                Popover on top
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                data-bs-placement="right" data-bs-content="Right popover">
+                Popover on right
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                data-bs-placement="bottom" data-bs-content="Bottom popover">
+                Popover on bottom
+            </button>
+            <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                data-bs-placement="left" data-bs-content="Left popover">
+                Popover on left
+            </button>
+        </div><br>
+
+
+        <h4>3.Custom Popover In Popover Component</h4>
+        <!--It is also possible to do popover in custom
+        using class custom-popover(data-bs-custom-class)-->
+        <div class="container">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
+                data-bs-custom-class="custom-popover" data-bs-title="Custom popover"
+                data-bs-content="This popover is themed via CSS variables.">
+                Custom popover
+            </button>
+        </div><br>
+
+
+        <h4>4.Dismissible Popover In Popover Component</h4>
+        <!--Without using any button in popover with second
+        technique we can use focus(data-bs-trigger) also do
+        the same without close button-->
+        <div class="container">
+            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus"
+                data-bs-title="Dismissible popover"
+                data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+        </div><br>
+
+
+        <h4>5.Disable Popover In Popover Component</h4>
+        <!--Disable popover can be made and used through
+        two different class hover and focus both should
+        be defined in data-bs-trigger-->
+        <div class="container">
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                data-bs-content="Disabled popover">
+                <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+            </span>
+        </div><br>
+
+    </div>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>
