@@ -39,7 +39,7 @@
                                 <a class="nav-link active" aria-current="page" href="#">Homepage</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shop</a>
+                                <a class="nav-link" href="https://www.jiomart.com/">Shop</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -65,6 +65,18 @@
                         </form>
                     </div>
                 </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="Webpage.html">Home</a></li>
+                    <li class="breadcrumb-item"><a
+                            href="https://en.wikipedia.org/wiki/Wikipedia:The_Wikipedia_Library">Library</a></li>
+                    <li class="breadcrumb-item"><a href="https://www.britannica.com/topic/">History</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
             </nav>
         </div>
 
@@ -148,7 +160,7 @@
                         </div><br><br>
 
                         <div id="internals">
-                            <h5>Troubled Models</h5>
+                            <h5>Messaging Revise</h5>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal" data-bs-whatever="@TroubledModel">Open modal for
                                 @TroubledModel</button>
@@ -186,27 +198,62 @@
                         </div><br><br>
 
                         <div id="item-2">
-                            <h4>Item 2</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, maxime a ratione dolore
-                                soluta nulla illo quas labore beatae velit perferendis optio aperiam mollitia et at
-                                asperiores accusantium nostrum architecto nihil, voluptate aspernatur quam
-                                necessitatibus
-                                totam! Ratione aspernatur ad numquam corporis consectetur rem, hic autem consequatur
-                                quasi
-                                fugiat. Corporis, blanditiis!</p>
+                            <h4>Nearby Collison</h4>
+                            <p>
+                                <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                                    role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle
+                                    first element</a>
+                                <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                    aria-controls="multiCollapseExample2">Toggle second element</button>
+                                <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse"
+                                    data-bs-target=".multi-collapse" aria-expanded="false"
+                                    aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                                    elements</button>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                            Some placeholder content for the first collapse component of this
+                                            multi-collapse example. This panel is hidden by default but revealed when
+                                            the user activates the relevant trigger.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                        <div class="card card-body">
+                                            Some placeholder content for the second collapse component of this
+                                            multi-collapse example. This panel is hidden by default but revealed when
+                                            the user activates the relevant trigger.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                         <div id="item-3">
-                            <h4>Item 3</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptate facere autem, sit
-                                ea
-                                illum blanditiis fuga officiis itaque beatae tempora totam, reiciendis nemo illo laborum
-                                cumque ratione voluptatem ipsam sapiente! Illo eius, laudantium pariatur consequuntur
-                                perspiciatis beatae deserunt et autem? Dignissimos culpa consectetur quas officiis ullam
-                                iure voluptas cumque dolorum doloribus similique, facilis atque qui omnis magnam minima
-                                dicta.</p>
-                        </div>
-                        <div id="item-3-1">
-                            <h5>Item 3-1</h5>
+                            <h4>Exclusive Toggler</h4>
+                            <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle Examples</button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <a href="https://getbootstrap.com/docs/5.2/examples/">Bootstrap5</a><br>
+                                    <a href="https://www.youtube.com/watch?v=v0IgI8vYD_o">Youtube</a>
+                                </div>
+                            </div>
+                        </div><br><br>
+
+                        <div id="item-3-1" class="user-select-none">
+                            <h5>Unselected Information</h5>
                             <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the
                                 page, the appropriate navigation link is highlighted. It's repeated throughout the
                                 component
@@ -235,9 +282,9 @@
                 </div>
             </div>
 
-            <div class="container-fluid border border-3">
-                <div class="footer bg-transparent">Copyright Goes To Practice</div>
-            </div>
+            <footer class="pt-5 my-5 text-muted border-top">
+                Created for example practice © 2022
+            </footer>
         </div>
 
     </div>
